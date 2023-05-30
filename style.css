@@ -5,7 +5,7 @@ html {
 }
 body {
   font-size: 0.875rem;
-  color: #2a2a2a;
+  color: #000;
 }
 a {
   text-decoration: none;
@@ -32,18 +32,61 @@ li {
 }
 
 /* ヘッダー　*/
-#header .site-title {
-    position: absolute;
+#header #site-title {
+    position: absolute; /* 要素の配置方法を指定・絶対配置にする */
     top: 30px;
     right: 30px;
   }
-  
 
-/* navi*/
+#header #menu-1:hover {
+    text-decoration: underline;
+  }
+
+/* navi */
+#header .inner {
+    display: flex; /* flexboxにする */
+    justify-content:space-between;	/* 均等に配置 */
+    flex-wrap: nowrap; /* 折り返し指定・一行 */
+    flex-direction: row; /* フレックスアイテムを横に並べる */
+}
+
+#wrapper-1 #menu-1 {
+    display: flex; /* flexboxにする */
+    align-items: center;
+}
+
 /* main　*/
+
+#mainvisual {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Shops */
+#div #shops{
+    display: flex; /* flexboxにする */
+    justify-content:space-between;	/* 均等に配置 */
+    flex-wrap: nowrap; /* 折り返し指定・一行 */
+    flex-direction: row; /* フレックスアイテムを横に並べる */
+}
+
+#shops-item-1{
+    
+}
+
+/* Items*/
+
+#items-img ul{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
 /* フッター　*/
 
 #footer .copyright {
-    text-align: center;
-  }
+    font-size:10px;
+    text-align:center;
+}
   
