@@ -32,25 +32,25 @@ li {
 }
 
 /* ヘッダー　*/
-#header #site-title {
+#header #innner #site-title {
     position: absolute; /* 要素の配置方法を指定・絶対配置にする */
     top: 30px;
     right: 30px;
   }
 
-#header #menu-1:hover {
+#header .menu-1:hover {
     text-decoration: underline;
   }
 
 /* navi */
-#header .inner {
+#header #inner {
     display: flex; /* flexboxにする */
     justify-content:space-between;	/* 均等に配置 */
     flex-wrap: nowrap; /* 折り返し指定・一行 */
     flex-direction: row; /* フレックスアイテムを横に並べる */
 }
 
-#wrapper-1 #menu-1 {
+.wrapper-1 .menu-1 {
     display: flex; /* flexboxにする */
     align-items: center;
 }
@@ -64,7 +64,7 @@ li {
 }
 
 /* Shops */
-#div #shops{
+#div .shops{
     display: flex; /* flexboxにする */
     justify-content:space-between;	/* 均等に配置 */
     flex-wrap: nowrap; /* 折り返し指定・一行 */
@@ -77,7 +77,7 @@ li {
 
 /* Items*/
 
-#items-img ul{
+.items-img ul{
 	display: flex;
 	flex-wrap: wrap;
 }
