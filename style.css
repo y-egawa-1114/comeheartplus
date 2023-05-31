@@ -25,6 +25,7 @@ li {
     font-size: 0.750rem;
     padding: 14px 36px;
     margin-top: 30px;
+    align-items: center;
   }
 
   a,a:hover,a:visited{
@@ -32,10 +33,10 @@ li {
 }
 
 /* ヘッダー　*/
-#header #innner #site-title {
+#header #innner .site-title {
     position: absolute; /* 要素の配置方法を指定・絶対配置にする */
-    top: 30px;
-    right: 30px;
+    width: 500px;               /* 幅指定 */
+    height:  190px;             /* 高さ指定 */
   }
 
 #header .menu-1:hover {
@@ -64,23 +65,57 @@ li {
 }
 
 /* Shops */
-#div .shops{
-    display: flex; /* flexboxにする */
-    justify-content:space-between;	/* 均等に配置 */
-    flex-wrap: nowrap; /* 折り返し指定・一行 */
-    flex-direction: row; /* フレックスアイテムを横に並べる */
+
+.brandshops-1 {
+  align-items: center;
 }
 
-#shops-item-1{
-    
+#shops {
+  display: flex; /* flexboxにする */
+  justify-content:space-between;	/* 均等に配置 */
+  flex-wrap: nowrap; /* 折り返し指定・一行 */
+  flex-direction: row; /* フレックスアイテムを横に並べる */ 
+  width: 100%; 
+  gap: 10px 10px; /* 余白 */
 }
 
 /* Items*/
+
+.items-itemes{
+  align-items: center;
+}
 
 .items-img ul{
 	display: flex;
 	flex-wrap: wrap;
 }
+
+/* 画像のサイズは常に固定 */
+.items-img img {
+  width : 280px;
+  height: 400px;
+  margin: 10px;
+  object-fit: cover;
+}
+
+
+/* Company */
+
+.text {
+  width: 100%;
+  color: white;
+  background-color: #213a70;
+  position: absolute;
+}
+
+
+#company .yurai {
+  width: 100%;
+  background-color: #213a70;
+  position: absolute;
+}
+
+
 
 
 /* フッター　*/
