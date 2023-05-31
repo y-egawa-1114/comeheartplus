@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+html,body {
+  margin:0;padding:0;
+}
+
 html {
   font-size: 100%;
 }
@@ -101,8 +105,8 @@ li {
 
 /* Company */
 
-.text {
-  width: 100%;
+.text-1 {
+  /* width: 100%; */
   color: white;
   background-color: #213a70;
   position: absolute;
@@ -110,15 +114,53 @@ li {
 
 
 #company .yurai {
-  width: 100%;
-  background-color: #213a70;
+  width: 50%;
+  height: 300px;
+  color: #000;
+  background-color: white;
+  padding:  20px; /* 余白指定 */
+  right:  50px; /* 右からの位置指定 */
+  top: 50px; /* 上からの位置指定 */
   position: absolute;
 }
 
+#company .made {
+  width:100%; 
+  height:300px;
+  color: white;
+  padding:  20px; /* 余白指定 */
+  left:  50px; /* 左からの位置指定 */
+  bottom: 50px; /* 下からの位置指定 */
+  background-color:transparent; /* 背景色を透明化する */
+  background-image: url(images/bg-company.jpg);
+  }
 
+  #company .info {
+    background-color: white;
+    color: #000;
+  }
+
+
+  /* Contact */
+
+#contact{
+  background-color: aquamarine;
+}
 
 
 /* フッター　*/
+
+#footer {
+  background-color: #fff;
+  color: #000;
+}
+
+#footer #wrapper-2 .menu-2 {
+  display: flex; /* flexboxにする */
+  justify-content:space-between;	/* 均等に配置 */
+  flex-wrap: nowrap; /* 折り返し指定・一行 */
+  flex-direction: row; /* フレックスアイテムを横に並べる */
+} 
 
 #footer .copyright {
     font-size:10px;
