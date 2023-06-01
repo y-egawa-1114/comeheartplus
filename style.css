@@ -29,35 +29,38 @@ li {
     font-size: 0.750rem;
     padding: 14px 36px;
     margin-top: 30px;
-    align-items: center;
+    margin-bottom: 30px;
+    text-align: center;
   }
+
 
   a,a:hover,a:visited{
     color: inherit;
 }
 
 /* ヘッダー　*/
-#header #innner .site-title {
-    position: absolute; /* 要素の配置方法を指定・絶対配置にする */
-    width: 200px;               /* 幅指定 */
-    height:  190px;             /* 高さ指定 */
+#inner .site-title {
+    display: flex; /* フレックスボックスにする */
+    width: 200px;              /* 幅指定 */
+    height:  100px;           /* 高さ指定 */
+    margin-left: 50px; /* 外側（左側）に余白 */
   }
 
 #header .menu-1:hover {
     text-decoration: underline;
   }
 
-/* navi */
+/* nav */
 #header #inner {
     display: flex; /* flexboxにする */
-    justify-content:space-between;	/* 均等に配置 */
+    justify-content:space-around;	/* 均等に配置し、各アイテムの両側にスペースを作る */
     flex-wrap: nowrap; /* 折り返し指定・一行 */
     flex-direction: row; /* フレックスアイテムを横に並べる */
 }
 
 .wrapper-1 .menu-1 {
     display: flex; /* flexboxにする */
-    align-items: center;
+    text-align: right;
 }
 
 /* main　*/
@@ -70,8 +73,12 @@ li {
 
 /* Shops */
 
+#brandshops {
+  text-align: center;
+}
+
 .brandshops-1 {
-  align-items: center;
+  text-align: center;
 }
 
 #shops {
@@ -80,16 +87,20 @@ li {
   flex-wrap: nowrap; /* 折り返し指定・一行 */
   flex-direction: row; /* フレックスアイテムを横に並べる */ 
   width: 100%; 
-  gap: 10px 10px; /* 余白 */
+  gap: 30px 30px; /* 余白 */
 }
 
 /* Items*/
 
-.items-itemes{
-  align-items: center;
+#items {
+ text-align: center;
 }
 
-.items-img ul{
+.items-itemes {
+  text-align: center;
+}
+
+.items-img ul {
 	display: flex;
 	flex-wrap: wrap;
 }
@@ -144,7 +155,9 @@ li {
   /* Contact */
 
 #contact{
-  background-color: aquamarine;
+  background-color: #abb8c3;
+  text-align: center;
+  padding: 30px 30px 30px 30px;
 }
 
 
@@ -157,9 +170,10 @@ li {
 
 #footer #wrapper-2 .menu-2 {
   display: flex; /* flexboxにする */
-  justify-content:space-between;	/* 均等に配置 */
+  justify-content:space-around;	/* 均等に配置 */
   flex-wrap: nowrap; /* 折り返し指定・一行 */
   flex-direction: row; /* フレックスアイテムを横に並べる */
+  font-size:  15px;
 } 
 
 #footer .copyright {
