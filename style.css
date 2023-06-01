@@ -38,6 +38,7 @@ li {
     color: inherit;
 }
 
+
 /* ヘッダー　*/
 #inner .site-title {
     display: flex; /* フレックスボックスにする */
@@ -118,6 +119,41 @@ li {
 
 /* Company */
 
+/* 疑似要素を使って上線を引く */
+#company .yurai-title::before {
+  content: "";
+  width: 40px;
+  height: 1px;
+  background-color: black;
+  display: block;
+}
+
+#company .made-taitle,::before {
+  content: "";
+  width: 40px;
+  height: 1px;
+  background-color: white;
+  display: block;
+}
+
+/*「display: inline-block;」を設定してブロック化することで、
+改行されてmargin-bottomが使用できるようになる */
+/* #company .yurai-title {
+  display: block;
+  font-size: 2.25rem;
+  letter-spacing: 0.3em;
+  margin-bottom: 10px;
+}
+
+#company .made-title {
+  display: block;
+  font-size: 2.25rem;
+  letter-spacing: 0.3em;
+  margin-bottom: 10px;
+} */
+
+
+
 .company-title {
   color: white;
   background-color: #213a70;
@@ -125,7 +161,7 @@ li {
 
 .text-1 {
   /* width: 100%; */
-  height: 500px;
+  height: 50vw;
   color: white;
   background-color: #213a70;
   /* position: absolute; */
@@ -134,7 +170,7 @@ li {
 
 #company .yurai {
   width: 30%;
-  height: 200px;
+  height: 20vw;
   color: #000;
   background-color: white;
   padding:  20px; /* 余白指定 */
@@ -145,7 +181,7 @@ li {
 
 #company .made {
   width:100%; 
-  height: 500px;
+  height: 50vw;
   /* position: absolute; */
   top: 50px;
   background-color:transparent; /* 背景色を透明化する */
