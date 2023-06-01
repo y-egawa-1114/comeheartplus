@@ -118,12 +118,17 @@ li {
 
 /* Company */
 
+.company-title {
+  color: white;
+  background-color: #213a70;
+}
+
 .text-1 {
   /* width: 100%; */
   height: 500px;
   color: white;
   background-color: #213a70;
-  position: absolute;
+  /* position: absolute; */
 }
 
 
@@ -135,13 +140,14 @@ li {
   padding:  20px; /* 余白指定 */
   right:  50px; /* 右からの位置指定 */
   top: 50px; /* 上からの位置指定 */
-  position: absolute;
+  /* position: absolute; */
 }
 
 #company .made {
   width:100%; 
   height: 500px;
-  position: absolute;
+  /* position: absolute; */
+  top: 50px;
   background-color:transparent; /* 背景色を透明化する */
   background-image: url(images/bg-company.jpg);
   }
