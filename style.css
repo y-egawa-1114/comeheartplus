@@ -39,7 +39,7 @@ li {
 /* ヘッダー　*/
 #header #innner .site-title {
     position: absolute; /* 要素の配置方法を指定・絶対配置にする */
-    width: 500px;               /* 幅指定 */
+    width: 200px;               /* 幅指定 */
     height:  190px;             /* 高さ指定 */
   }
 
