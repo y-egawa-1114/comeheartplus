@@ -58,9 +58,9 @@ li {
     flex-direction: row; /* フレックスアイテムを横に並べる */
 }
 
-.wrapper-1 .menu-1 {
-    display: flex; /* flexboxにする */
-    text-align: right;
+ .menu-1 {
+    display: flex; /* flexboxにする */ 
+    justify-content:space-around;	/* 均等に配置し、各アイテムの両側にスペースを作る */
 }
 
 /* main　*/
@@ -78,6 +78,7 @@ li {
 }
 
 .brandshops-1 {
+  color: #213a70;
   text-align: center;
 }
 
@@ -87,13 +88,14 @@ li {
   flex-wrap: nowrap; /* 折り返し指定・一行 */
   flex-direction: row; /* フレックスアイテムを横に並べる */ 
   width: 100%; 
-  gap: 30px 30px; /* 余白 */
+  margin: 10px 10px 10px 10px; /* 余白 */
 }
 
 /* Items*/
 
 #items {
- text-align: center;
+  color:#213a70;
+  text-align: center;
 }
 
 .items-itemes {
@@ -118,6 +120,7 @@ li {
 
 .text-1 {
   /* width: 100%; */
+  height: 500px;
   color: white;
   background-color: #213a70;
   position: absolute;
@@ -125,8 +128,8 @@ li {
 
 
 #company .yurai {
-  width: 50%;
-  height: 300px;
+  width: 30%;
+  height: 200px;
   color: #000;
   background-color: white;
   padding:  20px; /* 余白指定 */
@@ -137,19 +140,25 @@ li {
 
 #company .made {
   width:100%; 
-  height:300px;
-  color: white;
-  padding:  20px; /* 余白指定 */
-  left:  50px; /* 左からの位置指定 */
-  bottom: 50px; /* 下からの位置指定 */
+  height: 500px;
+  position: absolute;
   background-color:transparent; /* 背景色を透明化する */
   background-image: url(images/bg-company.jpg);
   }
 
-  #company .info {
+  #company .text-2 {
+    width: 30%;
+    color: white;
+    padding:  20px; /* 余白指定 */
+    left:  50px; /* 左からの位置指定 */
+    bottom: 0px; /* 下からの位置指定 */
+  }
+
+  .info {
     background-color: white;
     color: #000;
   }
+
 
 
   /* Contact */
