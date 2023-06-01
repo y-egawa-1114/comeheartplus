@@ -121,19 +121,19 @@ li {
 
 /* 疑似要素を使って上線を引く */
 #company .yurai-title::before {
-  content: "";
-  width: 40px;
+  /* content: "";
+  width: 20px;
   height: 1px;
   background-color: black;
-  display: block;
+  display: block; */
 }
 
-#company .made-taitle,::before {
-  content: "";
-  width: 40px;
+#company .made-title,::before {
+  /* content: "";
+  width: 20px;
   height: 1px;
   background-color: white;
-  display: block;
+  display: block; */
 }
 
 /*「display: inline-block;」を設定してブロック化することで、
@@ -152,7 +152,9 @@ li {
   margin-bottom: 10px;
 } */
 
-
+#container {
+  background-color: white;
+}
 
 .company-title {
   color: white;
@@ -161,8 +163,8 @@ li {
 
 .text-1 {
   /* width: 100%; */
-  height: 50vw;
-  color: white;
+  height: auto;
+  color: black;
   background-color: #213a70;
   /* position: absolute; */
 }
@@ -170,7 +172,7 @@ li {
 
 #company .yurai {
   width: 30%;
-  height: 20vw;
+  height: auto;
   color: #000;
   background-color: white;
   padding:  20px; /* 余白指定 */
@@ -181,23 +183,24 @@ li {
 
 #company .made {
   width:100%; 
-  height: 50vw;
+  height: auto;
   /* position: absolute; */
   top: 50px;
-  background-color:transparent; /* 背景色を透明化する */
-  background-image: url(images/bg-company.jpg);
+  
   }
 
   #company .text-2 {
-    width: 30%;
+    width: 100%;
     color: white;
     padding:  20px; /* 余白指定 */
     left:  50px; /* 左からの位置指定 */
     bottom: 0px; /* 下からの位置指定 */
+    background-color:transparent; /* 背景色を透明化する */
+  background-image: url(images/bg-company.jpg);
   }
 
   .info {
-    background-color: white;
+    /* background-color: white; */
     color: #000;
   }
 
