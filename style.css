@@ -120,13 +120,13 @@ li {
 /* Company */
 
 /* 疑似要素を使って上線を引く */
-#company .yurai-title::before {
+ #company .yurai-title::before {
   /* content: "";
   width: 20px;
   height: 1px;
   background-color: black;
   display: block; */
-}
+} 
 
 #company .made-title,::before {
   /* content: "";
@@ -163,8 +163,12 @@ li {
 
 .text-1 {
   /* width: 100%; */
-  height: auto;
+  display: flex;
+  flex-direction: column;
+  /* height: fit-content; */
   color: black;
+  padding:  0 0 0 0; /* 内側の余白指定 */
+  margin: 0 0 0 0; /* 外側の余白指定 */
   background-color: #213a70;
   /* position: absolute; */
 }
@@ -172,10 +176,11 @@ li {
 
 #company .yurai {
   width: 30%;
-  height: auto;
+  height: calc(100% + 20px);
   color: #000;
   background-color: white;
-  padding:  20px; /* 余白指定 */
+  padding:  50px; /* 内側の余白指定 */
+  margin: 0 0 0 50%; /* 外側の余白指定 */
   right:  50px; /* 右からの位置指定 */
   top: 50px; /* 上からの位置指定 */
   /* position: absolute; */
@@ -186,22 +191,35 @@ li {
   height: auto;
   /* position: absolute; */
   top: 50px;
-  
+  margin-top: 0;
+  background-color:transparent; /* 背景色を透明化する */
+  background-image: url(images/bg-company.jpg);
   }
 
   #company .text-2 {
-    width: 100%;
+    width: 30%;
     color: white;
-    padding:  20px; /* 余白指定 */
+    padding:  60px; /* 内側に余白指定 */
+    margin:  20px; /* 外側に余白指定 */
     left:  50px; /* 左からの位置指定 */
     bottom: 0px; /* 下からの位置指定 */
-    background-color:transparent; /* 背景色を透明化する */
-  background-image: url(images/bg-company.jpg);
+  }
+
+  .company-profile {
+    align-items: center;
+    text-align: center;
+    color:#213a70;
+  }
+
+  .company-info {
+    margin-right: auto;
+    margin-left: auto;
   }
 
   .info {
     /* background-color: white; */
     color: #000;
+    align-items: center;
   }
 
 
