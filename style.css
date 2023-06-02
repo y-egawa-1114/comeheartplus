@@ -152,10 +152,6 @@ li {
   margin-bottom: 10px;
 } */
 
-#container {
-  background-color: white;
-}
-
 .company-title {
   color: white;
   background-color: #213a70;
@@ -211,7 +207,13 @@ li {
     color:#213a70;
   }
 
-  .company-info {
+  #container {
+    margin-right: auto;
+    margin-left: auto;
+    background-color: white;
+  }
+
+  .company-prof {
     margin-right: auto;
     margin-left: auto;
   }
@@ -227,7 +229,8 @@ li {
   /* Contact */
 
 #contact{
-  background-color: #abb8c3;
+  background-color: #edf3fc;
+  color:#213a70;
   text-align: center;
   padding: 30px 30px 30px 30px;
 }
@@ -237,7 +240,7 @@ li {
 
 #footer {
   background-color: #fff;
-  color: #000;
+  color:#000
 }
 
 #footer #wrapper-2 .menu-2 {
@@ -245,7 +248,7 @@ li {
   justify-content:space-around;	/* 均等に配置 */
   flex-wrap: nowrap; /* 折り返し指定・一行 */
   flex-direction: row; /* フレックスアイテムを横に並べる */
-  font-size:  15px;
+  font-size:  12px;
 } 
 
 #footer .copyright {
