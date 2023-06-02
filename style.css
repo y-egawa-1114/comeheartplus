@@ -158,6 +158,11 @@ li {
 .company-title {
   color: white;
   background-color: #213a70;
+  font-size: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 80%;
 }
 
 .text-1 {
@@ -174,16 +179,24 @@ li {
 
 
 #company .yurai {
+  /* height: calc(100% + 20px); */
+  width: 100%;
+  height: auto;
+  /* position: absolute; */
+}
+
+#company .yurai-2 {
   width: 30%;
   height: calc(100% + 20px);
   color: #000;
   background-color: white;
   padding:  50px; /* 内側の余白指定 */
   margin: 0 0 0 50%; /* 外側の余白指定 */
-  right:  50px; /* 右からの位置指定 */
-  top: 50px; /* 上からの位置指定 */
+  /* right:  50px; 右からの位置指定
+  top: 50px; 上からの位置指定 */
   /* position: absolute; */
 }
+
 
 #company .made {
   width:100%; 
@@ -214,18 +227,31 @@ li {
     background-color: white;
     margin-right: auto;
     margin-left: auto;
+    align-items: center;
+    /* display: block;
+    width: 50%; */
   }
 
   .company-prof {
     margin-right: auto;
     margin-left: auto;
+    align-items: center;
+    /* display: block;
+    width: 50%; */
   }
 
-  .info {
-    /* background-color: white; */
-    color: #000;
-    align-items: center;
+  .company-prof dl {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
   }
+  .company-prof dl dt { 
+    width: 50%;
+  }
+  .company-prof dl dd {
+    width: 50%;
+  }
+  
 
 
 
