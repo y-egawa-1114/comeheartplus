@@ -241,15 +241,21 @@ li {
   }
 
   .company-prof dl {
-    display: flex;
-    flex-wrap: wrap;
+    display: flex; /* フレックスボックスにする */
+    flex-wrap: wrap; /* 折り返す */
     width: 100%;
+    box-sizing: border-box;
+    padding: 20px 20px 20px 20px; /* 内側に余白 */
+    margin: 20px 20px 20px 20px; /*　外側に余白 */
+    line-height: 40px; /* 行の高さを指定する */
   }
-  .company-prof dl dt { 
-    width: 50%;
+  .company-prof dl dt {
+    width: 45%;
+    font-weight: bold;
   }
   .company-prof dl dd {
-    width: 50%;
+    margin-left: 0; /* 初期値リセット */
+    width: 55%;
   }
   
 
