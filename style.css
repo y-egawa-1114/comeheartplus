@@ -1,7 +1,8 @@
 @charset "UTF-8";
 
 html,body {
-  margin:0;padding:0;
+  margin:0;
+  padding:0;
 }
 
 html {
@@ -62,6 +63,7 @@ li {
  .menu-1 {
     display: flex; /* flexboxにする */ 
     justify-content:space-around;	/* 均等に配置し、各アイテムの両側にスペースを作る */
+    gap: 20px;
 }
 
 /* main　*/
@@ -85,11 +87,12 @@ li {
 
 #shops {
   display: flex; /* flexboxにする */
-  justify-content:space-between;	/* 均等に配置 */
+  justify-content:space-around;	/* 均等に配置 */
   flex-wrap: nowrap; /* 折り返し指定・一行 */
   flex-direction: row; /* フレックスアイテムを横に並べる */ 
-  width: 100%; 
-  margin: 10px 10px 10px 10px; /* 余白 */
+  width: auto; 
+  margin: 25px 15px 15px 15px; /* 外側の余白 */
+  padding: 10px 10px 10px 10px; /* 内側の余白 */
 }
 
 /* Items*/
@@ -206,11 +209,11 @@ li {
     text-align: center;
     color:#213a70;
   }
-
-  #container {
+ 
+  #container{
+    background-color: white;
     margin-right: auto;
     margin-left: auto;
-    background-color: white;
   }
 
   .company-prof {
