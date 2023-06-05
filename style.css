@@ -188,14 +188,12 @@ li {
 #company .yurai-2 {
   width: 30%;
   height: 100%;
-  /* height: calc(100% + 20px); /* はみ出させる */ 
   color: #000;
-  background-color: white;
+  /* background-color: white; */
   padding:  50px; /* 内側の余白指定 */
   margin: 0 0 0 50%; /* 外側の余白指定 */
   /* right:  50px; 右からの位置指定
   top: 50px; 上からの位置指定 */
-  /* position: absolute; */
 }
 
 #company .yurai-3 {
