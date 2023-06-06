@@ -303,3 +303,41 @@ li {
     text-align:center;
 }
   
+
+/* レスポンシブ対応 */
+@media screen and (max-width: 480px) {
+	/* 480px以下に適用されるCSS（スマホ用） */
+
+  img {
+    max-width: 960px;
+  }
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  li {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 10px;
+  }
+
+  #company .yurai {
+    display: block;
+    text-align: center;
+    width: 100%;
+    height: 50%;
+  }
+
+  #company .yurai-3 {
+    width: auto;
+    height: auto;
+  }
+
+  #company .made {
+    width: auto;
+    height: auto;
+  }
+
+}
+
