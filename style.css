@@ -7,6 +7,7 @@ html,body {
 
 html {
   font-size: 100%;
+  font-family: "sofia-pro","ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","游ゴシック体","Yu Gothic",YuGothic,"メイリオ",Meiryo,sans-serif;
 }
 body {
   font-size: 0.875rem;
@@ -44,13 +45,11 @@ li {
 #inner .site-title {
     display: flex; /* フレックスボックスにする */
     width: 200px;              /* 幅指定 */
-    height:  100px;           /* 高さ指定 */
+    height:  50px;           /* 高さ指定 */
     margin-left: 50px; /* 外側（左側）に余白 */
   }
 
-#header .menu-1:hover {
-    text-decoration: underline;
-  }
+
 
 /* nav */
 #header #inner {
@@ -63,7 +62,12 @@ li {
  .menu-1 {
     display: flex; /* flexboxにする */ 
     justify-content:space-around;	/* 均等に配置し、各アイテムの両側にスペースを作る */
-    gap: 20px;
+    gap: 20px; /* 余白指定 */
+    margin-top: 25px; /* 外側（上側）に余白 */
+}
+
+#header .menu-1:hover {
+  text-decoration: underline;
 }
 
 /* main　*/
@@ -95,6 +99,23 @@ li {
   padding: 10px 10px 10px 10px; /* 内側の余白 */
 }
 
+.brandname {
+  color: #292b2c;
+  font-weight: bolder;
+}
+
+.brandname-ja {
+  color: #292b2c;
+  font-weight: bolder;
+  margin: 0 0 20px;
+}
+
+.setsumei {
+  color: #292b2c;
+  margin: 25px 15px 15px 15px; /* 外側の余白 */
+  padding: 10px 10px 10px 10px; /* 内側の余白 */
+}
+
 /* Items*/
 
 #items {
@@ -116,6 +137,7 @@ li {
   width : 280px;
   height: 400px;
   margin: 10px;
+  padding: 15px 0 0 ;
   object-fit: cover;
 }
 
@@ -211,7 +233,7 @@ li {
 
 #company .made {
   width:100%; 
-  height: auto;
+  height: 50%;
   /* position: absolute; */
   top: 50px;
   margin-top: 0;
@@ -287,7 +309,7 @@ li {
 
 #footer {
   background-color: #fff;
-  color:#000
+  color:#333
 }
 
 #footer #wrapper-2 .menu-2 {
@@ -295,8 +317,12 @@ li {
   justify-content:space-around;	/* 均等に配置 */
   flex-wrap: nowrap; /* 折り返し指定・一行 */
   flex-direction: row; /* フレックスアイテムを横に並べる */
-  font-size:  12px;
+  font-size:  15px;
+  font-weight: bolder;
 } 
+
+.pc { display: none !important; }
+.sp { display: none !important; }
 
 #footer .copyright {
     font-size:10px;
@@ -309,7 +335,12 @@ li {
 	/* 480px以下に適用されるCSS（スマホ用） */
 
   img {
-    max-width: 960px;
+    max-width: 480px;
+  }
+
+  .site-title img {
+    width:150px;
+    height: 150px;
   }
 
   ul {
@@ -322,9 +353,17 @@ li {
     padding: 10px;
   }
 
-  #company .yurai {
-    display: block;
-    text-align: center;
+
+  #shops {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #company {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
     height: 50%;
   }
@@ -337,7 +376,11 @@ li {
   #company .made {
     width: auto;
     height: auto;
+    margin-top: 350px;
   }
+
+  .pc { display: none !important; }
+  .sp { display: block !important; }
 
 }
 
