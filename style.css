@@ -197,7 +197,7 @@ li {
 }
 
 #company .yurai-3 {
-  width: 40%;
+  width: 30%;
   height: calc(50% + 20px); /* はみ出させる */ 
   color: #000;
   background-color: white;
