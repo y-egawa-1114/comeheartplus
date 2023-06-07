@@ -380,16 +380,18 @@ li {
   }
 
   #company .yurai-3 {
-    width: 50%;
-    height: 50%;
+    width: auto;
+    height: auto;
     align-items: center;
+    left: 0;
     /* position: absolute; */
   }
 
   #company .made {
-    width: 100%;
-    height: 50%;
+    width: auto;
+    height: auto;
     align-items: center;
+    left: 0;
     /* position: absolute; */
   }
 
