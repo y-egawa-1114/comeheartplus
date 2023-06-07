@@ -35,6 +35,10 @@ li {
     text-align: center;
   }
 
+  .btn:hover {
+    background: black;
+}
+
   a,a:hover,a:visited {
     color: inherit;
 }
@@ -64,6 +68,7 @@ li {
     width: 90%;
     align-items: center;
     flex: 1;
+    padding: 30px 60px 25px;
 }
 
  .menu-1 {
@@ -72,8 +77,9 @@ li {
     gap: 20px; /* 余白指定 */
     margin-top: 25px; /*外側（上側）に余白 */
     align-items: center;
-    width: 30px;
+    /* width: 30px; */
     font-weight: bold;
+    color: #333;
 }
 
 #header .menu-brandshops  a:hover {
@@ -106,6 +112,7 @@ li {
 
 #brandshops {
   text-align: center;
+  font-weight: bold;
 }
 
 .brandshops-1 {
@@ -125,12 +132,12 @@ li {
 
 .brandname {
   color: #292b2c;
-  font-weight: bolder;
+  font-weight: bold;
 }
 
 .brandname-ja {
   color: #292b2c;
-  font-weight: bolder;
+  font-weight: bold;
   margin: 0 0 20px;
 }
 
@@ -260,7 +267,7 @@ li {
   height: 50%;
   /* position: absolute; */
   top: 50px;
-  margin-top: 0;
+  margin-top: 10px;
   background-color:transparent; /* 背景色を透明化する */
   background-image: url(images/bg-company.jpg);
   }
@@ -342,7 +349,7 @@ li {
   flex-wrap: nowrap; /* 折り返し指定・一行 */
   flex-direction: row; /* フレックスアイテムを横に並べる */
   font-size:  15px;
-  font-weight: bolder;
+  font-weight: bold;
 } 
 
 .pc { display: none !important; }
