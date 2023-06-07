@@ -380,17 +380,16 @@ li {
   }
 
   #company .yurai-3 {
-    width: auto;
-    height: auto;
-    align-items: center;
-    left: 0;
+    width: 50%;
+    height: 50%;
+    left: 0%;
+    right: 0%;
     /* position: absolute; */
   }
 
   #company .made {
     width: auto;
     height: auto;
-    align-items: center;
     left: 0;
     /* position: absolute; */
   }
@@ -398,18 +397,18 @@ li {
   .text-1 {
     /* width: 100%; */
     /* display: flex;
+    align-items: center;
     flex-direction: column; */
     color: black;
     background-color: #213a70;
-    align-items: center;
   }
 
   #company .text-2 {
     /* width: 100%; */
     /* display: flex;
+     align-items: center;
     flex-direction: column; */
     color: white;
-    align-items: center;
   }
 
   .pc { display: none !important; }
