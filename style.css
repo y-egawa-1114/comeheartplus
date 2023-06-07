@@ -334,7 +334,7 @@ li {
 @media screen and (max-width: 480px) {
 	/* 480px以下に適用されるCSS（スマホ用） */
 
-  img {
+  #mainvisual {
     max-width: 480px;
   }
 
@@ -352,7 +352,7 @@ li {
     box-sizing: border-box;
     padding: 10px;
   }
-
+  
 
   #shops {
     display: flex;
@@ -387,7 +387,7 @@ li {
   }
 
   #company .made {
-    width: 50%;
+    width: 100%;
     height: 50%;
     align-items: center;
     /* position: absolute; */
