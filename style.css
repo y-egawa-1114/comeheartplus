@@ -472,6 +472,36 @@ li {
     /* padding: 10px 50px ; */
   }
 
+
+
+  .company-prof {
+    margin-right: auto;
+    margin-left: auto;
+    align-items: center;
+    /* display: block; */
+    width: 50%;
+  }
+
+
+  .company-prof dl {
+    /* display: flex; /* フレックスボックスにする */
+    /* flex-wrap: wrap; /* 折り返す */
+    width: 100%;
+    /* box-sizing: border-box; */
+    padding: 5px 5px 5px 5px; /* 内側に余白 */
+    margin: 0 auto;
+    /* margin: 20px 20px 20px 20px; 　外側に余白 */
+    line-height: 40px; /* 行の高さを指定する */
+  }
+  .company-prof dl dt {
+    width: 100%;
+    font-weight: bold;
+  }
+  .company-prof dl dd {
+    /* margin-left: 0; /* 初期値リセット */
+    width: 100%;
+  }
+
   .pc { display: none !important; }
   .sp { display: block !important; }
 
