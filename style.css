@@ -245,7 +245,7 @@ li {
   color: #000;
   /* background-color: white; */
   padding:  50px; /* 内側の余白指定 */
-  margin: 0 0 0 40%; /* 外側の余白指定 */
+  /*margin: 0 0 0 40%; /* 外側の余白指定 */
   /* right:  50px; 右からの位置指定
   top: 50px; 上からの位置指定 */
 }
@@ -259,7 +259,7 @@ li {
   /* margin: 0 0 0 50%; 外側の余白指定 */
   /* right:  50px; 右からの位置指定
   top: 50px; 上からの位置指定 */
-  position: absolute;
+  /* position: absolute; */
 }
 
 
@@ -267,7 +267,7 @@ li {
   width:100%; 
   height: 50%;
   /* position: absolute; */
-  top: 50px;
+  /* top: 50px; */
   margin-top: 10px;
   background-color:transparent; /* 背景色を透明化する */
   background-image: url(images/bg-company.jpg);
@@ -276,10 +276,15 @@ li {
   #company .text-2 {
     width: 30%;
     color: white;
-    padding:  60px; /* 内側に余白指定 */
-    margin:  20px; /* 外側に余白指定 */
+    /* padding:  60px; /* 内側に余白指定 */
+    /*margin:  20px; /* 外側に余白指定 */
     left:  50px; /* 左からの位置指定 */
     bottom: 0px; /* 下からの位置指定 */
+  }
+
+  #company .text-3 {
+    padding: 10px 50px;
+
   }
 
   .company-profile {
@@ -398,27 +403,30 @@ li {
     flex-direction: column;
     align-items: center;
     width: 100%; /* 親要素の方で横幅を指定しておく */
-    height: 100%;
+    /* height: 100%; */
   }
 
   #company .yurai {
     width: 100%; /* 子要素は横幅を親の100％（同じ幅）にしておく */
+    height: 400px;
+    margin-top: 20px;
   }
 
   #company .yurai-2 {
-    width: 100%;
-    height: 100%;
-    /* position: relative; */
-  }
-
-  #company .yurai-3 {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    position: relative;
+  }
+
+  #company .yurai-3 {
     width: 50%;
-    height: 35%;
+    height:calc(100% + 20px);
     left: 20%;
-    /* position: relative; */
+    position:absolute;
   }
 
   #company .made-title {
@@ -426,10 +434,11 @@ li {
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    height: 50%;
+    /* height: 50%; */
     font-size: 2.25rem;
     letter-spacing: 0.3em;
     margin-bottom: 10px;
+  
   }
 
   #company .made {
@@ -439,7 +448,7 @@ li {
     width: 100%;
     height: 100%;
     margin: 0;
-    padding: 10px 10px 10px 10px;
+    /* padding: 10px 10px 10px 10px; */
     /* position: relative; */
   }
 
@@ -454,12 +463,13 @@ li {
 
   #company .text-2 {
     width: 100%; 
-    box-sizing: border-box;
-    padding-top: 50%;
+    box-sizing: content-box;
+    /* padding-top: 50%; */
     /* display: flex;
     align-items: center;
     flex-direction: column; */
     color: white;
+    /* padding: 10px 50px ; */
   }
 
   .pc { display: none !important; }
