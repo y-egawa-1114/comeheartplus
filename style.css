@@ -160,9 +160,13 @@ li {
 }
 
 .items-img ul {
-	display: flex;
-	flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 220px);
   justify-content: center;
+  grid-gap: 1rem;
+	/* display: flex;
+	flex-wrap: wrap;
+  justify-content: center; */
 }
 
 /* 画像のサイズは常に固定 */
