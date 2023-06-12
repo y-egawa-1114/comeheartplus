@@ -122,7 +122,7 @@ li {
 }
 
 #shops {
-  display: flex; /* flexboxにする */
+  display: flex; /* flexboxにする  */
   justify-content:space-around;	/* 均等に配置 */
   flex-wrap: nowrap; /* 折り返し指定・一行 */
   flex-direction: row; /* フレックスアイテムを横に並べる */ 
