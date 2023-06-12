@@ -162,6 +162,7 @@ li {
 .items-img ul {
 	display: flex;
 	flex-wrap: wrap;
+  justify-content: center;
 }
 
 /* 画像のサイズは常に固定 */
