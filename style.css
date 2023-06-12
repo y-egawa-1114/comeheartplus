@@ -217,6 +217,7 @@ li {
   margin-right: auto;
   display: block;
   width: 80%;
+  height: 150px;
 }
 
 .text-1 {
@@ -254,13 +255,13 @@ li {
   position: relative;
   left: 40%;
   width: 30%;
-  height: calc(100% + 20px); /* はみ出させる */ 
+  height: calc(50% + 20px); /* はみ出させる */ 
   color: #000;
   background-color: white;
   padding:  30px; /* 内側の余白指定 */
   /* margin: 0 0 0 50%; 外側の余白指定 */
-  /* right:  50px; 右からの位置指定
-  top: 50px; 上からの位置指定 */
+  /* right:  50px; 右からの位置指定 */
+  top: 50px; /* 上からの位置指定 */
   /* position: absolute; */
 } 
 
