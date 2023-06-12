@@ -122,30 +122,43 @@ li {
 }
 
 #shops {
-  display: flex; /* flexboxにする  */
-  justify-content:space-around;	/* 均等に配置 */
-  flex-wrap: nowrap; /* 折り返し指定・一行 */
-  flex-direction: row; /* フレックスアイテムを横に並べる */ 
-  width: auto; 
+  /* display:flex; /* flexboxにする  */
+  /* justify-content:space-around;	/* 均等に配置 */
+  /* flex-wrap: nowrap; /* 折り返し指定・一行 */
+  /* flex-direction: row; /* フレックスアイテムを横に並べる */ 
+  display: grid; /* gridにする */
+  grid-template-columns: repeat( 3, minmax(100px,1fr) ) ; 
+  justify-content: center;
+  /* width: 90%;  */
+  /* text-align: center; */
   margin: 25px 15px 15px 15px; /* 外側の余白 */
   padding: 10px 10px 10px 10px; /* 内側の余白 */
 }
 
-.brandname {
+#shops .brandname {
   color: #292b2c;
   font-weight: bold;
 }
 
-.brandname-ja {
+#shops .brandname-ja {
   color: #292b2c;
   /* font-weight: bold; */
   margin: 0 0 20px;
+  font-weight: normal;
 }
 
-.setsumei {
+#shops .setsumei {
   color: #292b2c;
-  margin: 25px 15px 15px 15px; /* 外側の余白 */
-  padding: 10px 10px 10px 10px; /* 内側の余白 */
+  /* margin: 25px 15px 15px 15px; /* 外側の余白 */
+  /* padding: 10px 10px 10px 10px; /* 内側の余白 */
+  text-align: left;
+  font-weight: lighter; /* 文字を細くする */
+  width: 90%;
+  /* height: 200px; */
+}
+
+#shops .shop-items-1 {
+  width: 30%;
 }
 
 /* Items*/
