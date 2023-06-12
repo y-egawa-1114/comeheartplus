@@ -62,20 +62,20 @@ li {
 /* nav */
 #header #inner {
     display: flex; /* flexboxにする */
-    justify-content:space-around;	/* 均等に配置し、各アイテムの両側にスペースを作る */
+    justify-content:space-between;	/* 均等に配置し、各アイテムの両側にスペースを作る */
     flex-wrap: nowrap; /* 折り返し指定・一行 */
     flex-direction: row; /* フレックスアイテムを横に並べる */
     width: 90%;
     align-items: center;
     flex: 1;
-    padding: 30px 60px 25px;
+    padding: 30px 40px 25px;
 }
 
  .menu-1 {
     display: flex; /* flexboxにする */ 
     justify-content:flex-end;	/* 右側に寄せる */
     gap: 20px; /* 余白指定 */
-    margin-top: 25px; /*外側（上側）に余白 */
+    margin-top: 15px; /*外側（上側）に余白 */
     align-items: center;
     /* width: 30px; */
     font-weight: bold;
