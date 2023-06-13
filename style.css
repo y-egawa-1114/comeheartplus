@@ -174,9 +174,9 @@ li {
 
 .items-img ul {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 220px);
+  grid-template-columns: repeat(auto-fit, 300px);
   justify-content: center;
-  grid-gap: 1rem;
+  grid-gap: 15px;
 	/* display: flex;
 	flex-wrap: wrap;
   justify-content: center; */
@@ -184,7 +184,7 @@ li {
 
 /* 画像のサイズは常に固定 */
 .items-img img {
-  width : 200px;
+  width : 280px;
   height: 400px;
   margin: 10px;
   padding: 15px 0 0 ;
@@ -238,14 +238,22 @@ li {
   height: 150px;
 }
 
-.text-1 {
+
+#company {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 100px;
+}
+
+
+#company .text-1 {
   /* width: 100%; */
   /* display: flex;
   flex-direction: column; */
   /* height: fit-content; */
-  display: grid; /* gridにする */
-  grid-template-columns: 50% 50%; /* 50%の列トラックを2列表示させる */
-  gap: 10px; /* 余白 */
+  /* display: grid; /* gridにする */
+  /* grid-template-columns: 50% 50%; /* 50%の列トラックを2列表示させる */
+  /* gap: 10px; /* 余白 */
   color: black;
   padding:  0 0 0 0; /* 内側の余白指定 */
   margin: 0 0 0 0; /* 外側の余白指定 */
